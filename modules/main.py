@@ -9,6 +9,7 @@ def _setup_improv(registry):
     import ribbit.config as _config
     import ribbit.improv as _improv
     import ribbit.network as _network
+    import ribbit.gsm as _gsm
 
     async def _improv_set_wifi_settings(ssid, password):
         registry.config.set(
