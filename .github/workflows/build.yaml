@@ -38,7 +38,7 @@ jobs:
         python ./tools/upload-to-golioth.py
       env:
         GOLIOTH_PROJECT: ribbit
-        GOLIOTH_BLUEPRINT: 638a8a406a504ec89e7b18ee
+        GOLIOTH_BLUEPRINT: 63cc5044c345ce2e0256ac0e
         GOLIOTH_API_KEY: ${{ secrets.GOLIOTH_API_KEY }}
       shell: bash
 
