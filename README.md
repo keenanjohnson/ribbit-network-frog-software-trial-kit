@@ -36,6 +36,15 @@ Flash the firmware to a device connected to `/dev/ttyACM*`:
 $ make DEVICE=/dev/ttyACM0 flash
 ```
 
+## Setting Golioth Config
+
+```shell
+import ribbit.config as _config
+registry.config.set({"golioth.user": "<user>", "golioth.password": "<psk>"})
+registry.config.set({"golioth.user": "20230121204935-trane-trial-sensor-4@trane-trial-sensors", "golioth.password": "570da391a5c91b1bb93b801d50775a4d"})
+
+```
+
 ## Need Help?
 [If you are not sure where to start or just want to chat join our developer discord here.](https://discord.gg/vq8PkDb2TC). You can also [start a discussion](https://github.com/Ribbit-Network/ribbit-network-frog-sensor/discussions) right here in Github.
 

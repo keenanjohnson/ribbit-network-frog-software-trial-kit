@@ -4,7 +4,7 @@ PORT_DIR := ${MP_DIR}/ports/esp32
 BOARD := ribbit
 BUILD_DIR := ${PORT_DIR}/build-${BOARD}
 
-DEVICE := /dev/ttyACM*
+DEVICE := /dev/cu.usbmodem141401
 
 .PHONY: build
 build: ui
