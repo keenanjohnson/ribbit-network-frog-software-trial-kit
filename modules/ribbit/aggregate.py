@@ -7,9 +7,6 @@ import json
 
 import ribbit.coap as _coap
 
-#from influxdb_client import InfluxDBClient, Point, WritePrecision
-#from influxdb_client.client.write_api import SYNCHRONOUS 
-
 
 class SensorAggregator:
     def __init__(self, registry):

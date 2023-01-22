@@ -760,6 +760,8 @@ class BlockReader:
             len(options) != 1
             or (decode_uint_option(options[0].buffer) >> 4) != self._block_num
         ):
+            print("Error Case")
+            print("Block Options:", options)
             raise RuntimeError("unexpected block option in server response")
 
         if len(buf) < len(response.payload):
