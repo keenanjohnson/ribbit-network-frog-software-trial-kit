@@ -17,7 +17,7 @@ _MAX_OPTION_NUM = const(10)
 _BUF_MAX_SIZE = const(1500)
 _DEFAULT_PORT = const(5683)
 
-_DEBUG = const(0)
+_DEBUG = const(1)
 
 VERSION_UNSUPPORTED = const(0)
 VERSION_1 = const(1)
