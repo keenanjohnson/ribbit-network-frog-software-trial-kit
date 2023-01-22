@@ -204,14 +204,14 @@ async def _main():
 
     registry.ota_manager.successful_boot()
 
-    import ribbit.gsm as _gsm
-
     app = _http.build_app(registry)
     asyncio.create_task(
         app.start_server(
             port=80 if not in_simulator else 8082,
         )
     )
+
+    import ribbit.gsm as _gsm
 
 
 if __name__ == "__main__":
