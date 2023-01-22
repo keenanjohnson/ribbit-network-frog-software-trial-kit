@@ -21,8 +21,8 @@ class SensorAggregator:
 
     async def _loop(self):
         while True:
-            # Send a data point every 2 seconds
-            await asyncio.sleep_ms(2000)
+            # Send a data point every 5 seconds
+            await asyncio.sleep_ms(5000)
 
             ret = collections.OrderedDict()
             for sensor in self._registry.sensors.values():
