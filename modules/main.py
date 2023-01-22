@@ -60,6 +60,7 @@ async def _main():
         sys.path.append(os.getcwd() + "/../vendor/microdot/src")
         sys.path.append(os.getcwd() + "/..")
 
+    import ribbit.aggregate as _aggregate
     import ribbit.config as _config
     import ribbit.golioth as _golioth
     import ribbit.coap as _coap
@@ -81,6 +82,7 @@ async def _main():
     registry = Registry()
 
     _heartbeat.Heartbeat(in_simulator)
+    _aggregate.SensorAggregator(registry)
 
     config_schema = []
     if not in_simulator:
@@ -167,13 +169,8 @@ async def _main():
                 try:
                     typ = item.pop("@type")
                     data = json.dumps(item)
-                    self._logger.info("Data packet %s: %s", typ, data)
+                    self._logger.info("Sensor Data %s: %s", typ, data)
 
-                    await coap.post(
-                        ".s/" + typ,
-                        data,
-                        format=_coap.CONTENT_FORMAT_APPLICATION_JSON,
-                    )
                 except Exception:
                     pass
 

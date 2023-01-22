@@ -43,6 +43,12 @@ import ribbit.config as _config
 registry.config.set({"golioth.user": "<user>", "golioth.password": "<psk>"})
 ```
 
+### Disabling OTA
+```shell
+import ribbit.config as _config
+registry.config.set({"golioth.ota.enabled": False})
+```
+
 ## Need Help?
 [If you are not sure where to start or just want to chat join our developer discord here.](https://discord.gg/vq8PkDb2TC). You can also [start a discussion](https://github.com/Ribbit-Network/ribbit-network-frog-sensor/discussions) right here in Github.
 

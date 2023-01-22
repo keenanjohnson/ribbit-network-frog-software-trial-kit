@@ -197,7 +197,7 @@ class ModemManager:
 
                 while True:
                     await asyncio.sleep_ms(1_000)
-                    print(ppp.status(), ppp.ifconfig())
+                    #print(ppp.status(), ppp.ifconfig())
 
             except Exception as exc:
                 self._logger.exc(exc, "Exception in modem loop")
