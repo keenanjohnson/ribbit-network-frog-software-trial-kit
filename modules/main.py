@@ -169,7 +169,7 @@ async def _main():
                 try:
                     typ = item.pop("@type")
                     data = json.dumps(item)
-                    self._logger.info("Sensor Data %s: %s", typ, data)
+                    #self._logger.info("Sensor Data %s: %s", typ, data)
 
                 except Exception:
                     pass
