@@ -41,8 +41,6 @@ $ make DEVICE=/dev/ttyACM0 flash
 ```shell
 import ribbit.config as _config
 registry.config.set({"golioth.user": "<user>", "golioth.password": "<psk>"})
-registry.config.set({"golioth.user": "20230121204935-trane-trial-sensor-4@trane-trial-sensors", "golioth.password": "570da391a5c91b1bb93b801d50775a4d"})
-
 ```
 
 ## Need Help?
