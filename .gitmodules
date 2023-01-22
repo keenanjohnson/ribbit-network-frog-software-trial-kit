@@ -7,3 +7,6 @@
 	path = vendor/microdot
 	url = https://github.com/miguelgrinberg/microdot.git
 	ignore = dirty
+[submodule "vendor/influxdb-client-python"]
+	path = vendor/influxdb-client-python
+	url = https://github.com/influxdata/influxdb-client-python.git

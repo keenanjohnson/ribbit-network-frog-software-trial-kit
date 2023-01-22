@@ -3,6 +3,7 @@ import subprocess
 import os
 
 include("$(MPY_DIR)/extmod/uasyncio")
+freeze("vendor/influxdb-client-python/influxdb_client/client")
 freeze("$(PORT_DIR)/modules")
 require("neopixel")
 require("ntptime")
