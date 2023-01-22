@@ -1,6 +1,5 @@
 import uasyncio as asyncio
 
-
 def _setup_improv(registry):
     import binascii
 
@@ -9,7 +8,6 @@ def _setup_improv(registry):
     import ribbit.config as _config
     import ribbit.improv as _improv
     import ribbit.network as _network
-    import ribbit.gsm as _gsm
 
     async def _improv_set_wifi_settings(ssid, password):
         registry.config.set(
@@ -205,6 +203,8 @@ async def _main():
         _setup_improv(registry)
 
     registry.ota_manager.successful_boot()
+
+    import ribbit.gsm as _gsm
 
     app = _http.build_app(registry)
     asyncio.create_task(
